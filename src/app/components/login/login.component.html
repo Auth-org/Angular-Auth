@@ -1,0 +1,17 @@
+<div class='login'>
+    <div class='card'>
+      <div class='left'>
+        <h1>Hello coders.</h1>
+        <span>Don't you have an account? </span>
+          <button routerLink="/sign-up">Register</button>
+      </div>
+      <div class='right'>
+        <h1>Login</h1>
+        <form [formGroup]="loginForm">
+          <input type="email" placeholder="Email" formControlName="email" />
+          <input type="password" placeholder="Password" formControlName="password" />
+          <button (click)="loginUser()" >Login</button>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,5 @@
+<div *ngIf="(afAuth.user | async)" class="logged">
+    User is logged in
+    <br>
+    <button (click)="logout()" routerLink="/sign-in"> Sign out</button>
+</div>

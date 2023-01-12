@@ -1,0 +1,18 @@
+<form class='register' (ngSubmit)="signup()" >
+    <div class='card'>
+      <div class='left'>
+        <h1>Hello coders.</h1>
+        <span>Do you have an account? </span>
+          <button routerLink="/sign-in">Login</button>
+      </div>
+      <div class='right'>
+        <h1>Signup</h1>
+        <form [formGroup]="signupForm"  >
+          <input type="text" placeholder="Username" formControlName="displayName" />
+          <input type="email" placeholder="Email" formControlName="email"/>
+          <input type="password" placeholder="password" formControlName="password"/>
+          <button (click)="signup()">register</button>
+        </form>
+      </div>
+    </div>
+</form>
